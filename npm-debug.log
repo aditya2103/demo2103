@@ -1,20 +1,80 @@
 0 info it worked if it ends with ok
 1 verbose cli [ 'c:\\Program Files\\nodejs\\node.exe',
 1 verbose cli   'c:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
-1 verbose cli   'version',
-1 verbose cli   '1.0.0' ]
+1 verbose cli   'publish' ]
 2 info using npm@2.14.7
 3 info using node@v4.2.3
-4 verbose stack Error: Version not changed
-4 verbose stack     at c:\Program Files\nodejs\node_modules\npm\lib\version.js:51:49
-4 verbose stack     at c:\Program Files\nodejs\node_modules\npm\node_modules\graceful-fs\graceful-fs.js:76:16
-4 verbose stack     at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:380:3)
-5 verbose cwd C:\Users\Aditya\demo2103
-6 error Windows_NT 6.3.9600
-7 error argv "c:\\Program Files\\nodejs\\node.exe" "c:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "version" "1.0.0"
-8 error node v4.2.3
-9 error npm  v2.14.7
-10 error Version not changed
-11 error If you need help, you may report this error at:
-11 error     <https://github.com/npm/npm/issues>
-12 verbose exit [ 1, true ]
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: 'C:\\Users\\Aditya\\demo2103',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory C:\Users\Aditya\AppData\Roaming\npm-cache\demo2103\1.0.0\package.tgz not in flight; packing
+9 verbose tar pack [ 'C:\\Users\\Aditya\\AppData\\Roaming\\npm-cache\\demo2103\\1.0.0\\package.tgz',
+9 verbose tar pack   'C:\\Users\\Aditya\\demo2103' ]
+10 verbose tarball C:\Users\Aditya\AppData\Roaming\npm-cache\demo2103\1.0.0\package.tgz
+11 verbose folder C:\Users\Aditya\demo2103
+12 info prepublish demo2103@1.0.0
+13 verbose addLocalTarball adding from inside cache C:\Users\Aditya\AppData\Roaming\npm-cache\demo2103\1.0.0\package.tgz
+14 silly cache afterAdd demo2103@1.0.0
+15 verbose afterAdd C:\Users\Aditya\AppData\Roaming\npm-cache\demo2103\1.0.0\package\package.json not in flight; writing
+16 verbose afterAdd C:\Users\Aditya\AppData\Roaming\npm-cache\demo2103\1.0.0\package\package.json written
+17 silly publish { name: 'demo2103',
+17 silly publish   version: '1.0.0',
+17 silly publish   private: true,
+17 silly publish   scripts: { start: 'node ./bin/www' },
+17 silly publish   dependencies:
+17 silly publish    { async: '^1.5.0',
+17 silly publish      'body-parser': '~1.13.2',
+17 silly publish      'cookie-parser': '~1.3.5',
+17 silly publish      debug: '~2.2.0',
+17 silly publish      express: '~4.13.1',
+17 silly publish      jade: '~1.11.0',
+17 silly publish      kerberos: '~0.0',
+17 silly publish      mongodb: '^2.1.0',
+17 silly publish      mongoose: '^4.2.9',
+17 silly publish      morgan: '~1.6.1',
+17 silly publish      'serve-favicon': '~2.3.0' },
+17 silly publish   main: 'index.js',
+17 silly publish   devDependencies: {},
+17 silly publish   repository:
+17 silly publish    { type: 'git',
+17 silly publish      url: 'git+https://github.com/aditya2103/demo2103.git' },
+17 silly publish   author: { name: 'Aditya Agarwal', email: 'aditya.intern@sodelhi.com' },
+17 silly publish   license: 'ISC',
+17 silly publish   bugs: { url: 'https://github.com/aditya2103/demo2103/issues' },
+17 silly publish   homepage: 'https://github.com/aditya2103/demo2103#readme',
+17 silly publish   description: '',
+17 silly publish   gitHead: '3f1ea3562c3e937e129244e4b344a5c04b6bae96',
+17 silly publish   readme: 'ERROR: No README data found!',
+17 silly publish   _id: 'demo2103@1.0.0',
+17 silly publish   _shasum: '0cd1e3ae1667a6b303ef41df2c58a97fa488a220',
+17 silly publish   _from: '.' }
+18 verbose getPublishConfig undefined
+19 verbose stack Error: This package has been marked as private
+19 verbose stack Remove the 'private' field from the package.json to publish it.
+19 verbose stack     at publish_ (c:\Program Files\nodejs\node_modules\npm\lib\publish.js:98:5)
+19 verbose stack     at Array.<anonymous> (c:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\bind-actor.js:15:8)
+19 verbose stack     at LOOP (c:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\chain.js:15:14)
+19 verbose stack     at LOOP (c:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\chain.js:14:28)
+19 verbose stack     at chain (c:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\chain.js:20:5)
+19 verbose stack     at c:\Program Files\nodejs\node_modules\npm\lib\publish.js:73:5
+19 verbose stack     at RES (c:\Program Files\nodejs\node_modules\npm\node_modules\inflight\inflight.js:23:14)
+19 verbose stack     at f (c:\Program Files\nodejs\node_modules\npm\node_modules\once\once.js:17:25)
+19 verbose stack     at c:\Program Files\nodejs\node_modules\npm\lib\cache.js:350:14
+19 verbose stack     at c:\Program Files\nodejs\node_modules\npm\node_modules\write-file-atomic\index.js:29:15
+20 verbose cwd C:\Users\Aditya\demo2103
+21 error Windows_NT 6.3.9600
+22 error argv "c:\\Program Files\\nodejs\\node.exe" "c:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "publish"
+23 error node v4.2.3
+24 error npm  v2.14.7
+25 error This package has been marked as private
+25 error Remove the 'private' field from the package.json to publish it.
+26 error If you need help, you may report this error at:
+26 error     <https://github.com/npm/npm/issues>
+27 verbose exit [ 1, true ]
